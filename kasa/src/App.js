@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import AboutPage from "./pages/About/AboutPage";
 import HomePage from "./pages/Home/HomePage";
@@ -10,10 +10,12 @@ function App() {
   return (
     <Router>
       <Header />
-      <Route path="/About" component={AboutPage} />
-      <Route path="/Home" component={HomePage} />
-      <Route path="/Logement" component={LogementPage} />
-      <Route path="/PageNotFound" component={PageNotFound} />
+      <Routes>
+        <Route path="/About" component={AboutPage} />
+        <Route path="/Home" component={HomePage} />
+        <Route path="/Logement" component={LogementPage} />
+        <Route path="/PageNotFound" component={PageNotFound} />
+      </Routes>
     </Router>
   );
 }
