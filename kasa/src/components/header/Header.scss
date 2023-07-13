@@ -1,9 +1,20 @@
 header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 110px;
   img {
+    height: 50%;
+    display: flex;
   }
   nav {
-    background-color: black;
+    display: flex;
+    gap: 30px;
+    padding-right: 30px;
+
     .navlink {
+      color: red;
+      font-family: "Montserrat";
     }
   }
 }
