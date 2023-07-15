@@ -1,16 +1,15 @@
 footer {
+  display: flex;
+  justify-content: center;
   background-color: black;
   img,
   p {
     display: flex;
-    justify-content: center;
     align-items: center;
     margin-top: 50px;
+    color: white;
   }
   img {
-    padding: 0px 0px 0px 600px;
-  }
-  p {
-    color: white;
+    padding-left: 70px;
   }
 }

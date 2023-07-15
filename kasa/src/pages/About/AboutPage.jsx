@@ -1,5 +1,11 @@
+import BannerAbout from "../../assets/BannerAbout";
+
 function AboutPage() {
-  return;
+  return (
+    <div>
+      <img src={BannerAbout} alt="" />
+    </div>
+  );
 }
 
 export default AboutPage;

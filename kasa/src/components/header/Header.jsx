@@ -8,7 +8,7 @@ function Header() {
       <img src={HeaderLogo} alt="Logo" />
       <nav>
         <NavLink className={"navlink"} to={"/"}>
-          {" Accueil"}
+          {"Accueil"}
         </NavLink>
         <NavLink className={"navlink"} to={"/About"}>
           {"À propos"}
