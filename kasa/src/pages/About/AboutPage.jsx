@@ -1,4 +1,6 @@
-import BannerAbout from "../../assets/BannerAbout";
+import React from "react";
+import BannerAbout from "../../assets/BannerAbout.svg";
+import "./AboutBanner.scss";
 
 function AboutPage() {
   return (

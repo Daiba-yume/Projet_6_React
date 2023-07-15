@@ -1,9 +1,5 @@
-function Banner(text) {
-  return (
-    <div>
-      <h1>{text}</h1>
-    </div>
-  );
+function Banner() {
+  return <div></div>;
 }
 
 export default Banner;
