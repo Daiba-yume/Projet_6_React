@@ -5,7 +5,7 @@ function Banner({ page, imageUrl, message }) {
       <img
         src={imageUrl}
         alt="Banner"
-        className={page == "about" ? "aboutBanner" : ""}
+        className={page === "about" ? "aboutBanner" : ""}
       />
       <h1>{message}</h1>
     </div>
