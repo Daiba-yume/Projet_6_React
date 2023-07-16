@@ -9,19 +9,20 @@ import PageNotFound from "./pages/PageNotFound/PageNotFound";
 
 function App() {
   return (
-    <div className="manContainer">
-      <BrowserRouter>
-        <Header />
-        {/* c'est quoi la difference entre browserRouter et Rourter ?? */}
-        <Routes>
-          <Route path="/About" element={<AboutPage />} />
-          <Route path="/" element={<HomePage />} />
-          <Route path="/Logement/:id" element={<LogementPage />} />
-          <Route path="/PageNotFound" element={<PageNotFound />} />
-        </Routes>
-      </BrowserRouter>
+    <>
+      <div className="manContainer">
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path="/About" element={<AboutPage />} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/Logement/:id" element={<LogementPage />} />
+            <Route path="/PageNotFound" element={<PageNotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
       <Footer />
-    </div>
+    </>
   );
 }
 
