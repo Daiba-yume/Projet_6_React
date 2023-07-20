@@ -5,7 +5,7 @@ import BannerAbout from "../../assets/BannerAbout.svg";
 function AboutPage() {
   return (
     <main>
-      <Banner page="about" imageUrl={BannerAbout} message="blabla" />
+      <Banner page="about" imageUrl={BannerAbout} message="" />
     </main>
   );
 }

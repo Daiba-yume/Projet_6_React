@@ -12,10 +12,13 @@ header {
     display: flex;
     gap: 30px;
     padding-right: 30px;
+    list-style-type: none;
 
     .navlink {
-      color: red;
+      color: #ff6060;
       font-family: "Montserrat";
+      font-weight: 600;
+      font-size: 1.2em;
     }
   }
 }
