@@ -1,0 +1,21 @@
+div {
+  .notFound {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .title {
+    color: #ff6060;
+    font-size: 11em;
+  }
+  .error {
+    color: #ff6060;
+    font-size: 2em;
+  }
+  .link {
+    color: #ff6060;
+    font-size: 1.5em;
+    margin-top: 140px;
+  }
+}
