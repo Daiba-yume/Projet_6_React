@@ -1,4 +1,5 @@
 div {
+  margin-bottom: 50px;
   .notFound {
     display: flex;
     flex-direction: column;
@@ -6,8 +7,11 @@ div {
     align-items: center;
   }
   .title {
+    font-family: "Montserrat";
     color: #ff6060;
-    font-size: 11em;
+    font-size: 15em;
+    margin-top: 30px;
+    margin-bottom: 0px;
   }
   .error {
     color: #ff6060;
@@ -16,6 +20,7 @@ div {
   .link {
     color: #ff6060;
     font-size: 1.5em;
-    margin-top: 140px;
+    margin-bottom: 30px;
+    margin-top: 43px;
   }
 }

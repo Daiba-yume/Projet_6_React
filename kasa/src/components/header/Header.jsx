@@ -12,7 +12,7 @@ function Header() {
           {"Accueil"}
         </NavLink>
         <NavLink className={"navlink"} to={"/About"}>
-          {"Àpropos"}
+          {"À propos"}
         </NavLink>
       </nav>
     </header>
