@@ -1,11 +1,10 @@
-div {
-  margin-bottom: 50px;
-  .notFound {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+.notFound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+
   .title {
     font-family: "Montserrat";
     color: #ff6060;
@@ -22,5 +21,16 @@ div {
     font-size: 1.5em;
     margin-bottom: 30px;
     margin-top: 43px;
+  }
+  @media only screen and (max-width: 768px) {
+    .title,
+    .error,
+    .link {
+      margin: 120px;
+    }
+    .error {
+      padding-left: 80px;
+      font-size: 35px;
+    }
   }
 }

@@ -1,0 +1,45 @@
+.containerCollapse {
+  font-family: "Montserrat";
+  margin-bottom: 30px;
+  background-color: #f6f6f6;
+  border-radius: 15px;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #ff6060;
+  }
+  .header h2 {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: white;
+    margin-left: 20px;
+  }
+  img {
+    margin-right: 20px;
+  }
+
+  .collapseContent {
+    padding: 10px;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    background-color: #f6f6f6;
+  }
+  p {
+    font-weight: 400;
+    padding-bottom: 15px;
+    margin: 20px;
+    color: #ff6060;
+  }
+  @media only screen and (max-width: 768px) {
+    .containerCollapse {
+      margin-bottom: 30px;
+    }
+    .aboutbanner {
+      height: 363px;
+    }
+  }
+}

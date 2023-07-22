@@ -10,7 +10,7 @@ import PageNotFound from "./pages/PageNotFound/PageNotFound";
 function App() {
   return (
     <>
-      <div className="manContainer">
+      <div className="mainContainer">
         <BrowserRouter>
           <Header />
           <Routes>

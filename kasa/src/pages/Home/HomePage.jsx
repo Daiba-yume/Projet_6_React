@@ -3,6 +3,7 @@ import Banner from "../../components/banner/Banner";
 import BannerHome from "../../assets/BannerHome.svg";
 import logements from "../../datas/logements.json";
 import Card from "../../components/card/Card";
+import "../../styles/HomePage.scss";
 
 function HomePage() {
   return (
@@ -12,13 +13,12 @@ function HomePage() {
         imageUrl={BannerHome}
         message="Chez vous, partout et ailleurs"
       />
-      <div>
-        <Card
-          key={logements.id}
-          id={logements.id}
-          cover={logements.cover}
-          tilte={logements.title}
-        />
+      <div className={"cardContainer"}>
+        <ul className={"list"}>
+          {logements.map(({ id, title, cover }) => (
+            <Card key={id} id={id} cover={cover} tilte={title} />
+          ))}
+        </ul>
       </div>
     </main>
   );
