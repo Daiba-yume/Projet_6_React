@@ -14,11 +14,11 @@ function HomePage() {
         message="Chez vous, partout et ailleurs"
       />
       <div className={"cardContainer"}>
-        <ul className={"list"}>
+        <div className={"list"}>
           {logements.map(({ id, title, cover }) => (
-            <Card key={id} id={id} cover={cover} tilte={title} />
+            <Card key={id} id={id} cover={cover} title={title} />
           ))}
-        </ul>
+        </div>
       </div>
     </main>
   );

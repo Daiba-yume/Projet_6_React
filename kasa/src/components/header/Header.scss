@@ -16,10 +16,12 @@ header {
 
     .navlink {
       color: #ff6060;
-      font-family: "Montserrat";
       font-weight: 400;
       font-size: 1.2em;
       text-decoration: none;
+      @media only screen and (max-width: 768px) {
+        text-transform: uppercase;
+      }
     }
 
     .navlink:hover {

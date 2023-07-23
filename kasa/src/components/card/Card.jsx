@@ -4,9 +4,9 @@ import "./Card.scss";
 
 const Card = ({ id, title, cover }) => {
   return (
-    <Link to={`/logement/${id}`} className={id}>
-      <img className={cover} src={cover} alt={title} />
-      <h2 className={title}>{title}</h2>
+    <Link to={`/Logement/${id}`} className="card">
+      <img className="image" src={cover} alt={title} />
+      <p className="titre">{title}</p>
     </Link>
   );
 };

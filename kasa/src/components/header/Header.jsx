@@ -8,11 +8,11 @@ function Header() {
     <header>
       <img src={HeaderLogo} alt="Logo" />
       <nav>
-        <NavLink className={"navlink"} to={"/"}>
+        <NavLink className="navlink" to="/">
           {"Accueil"}
         </NavLink>
-        <NavLink className={"navlink"} to={"/About"}>
-          {"Àpropos"}
+        <NavLink className="navlink" to="/About">
+          {"À propos"}
         </NavLink>
       </nav>
     </header>
