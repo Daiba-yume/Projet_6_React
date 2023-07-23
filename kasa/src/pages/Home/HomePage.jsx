@@ -13,8 +13,8 @@ function HomePage() {
         imageUrl={BannerHome}
         message="Chez vous, partout et ailleurs"
       />
-      <div className={"cardContainer"}>
-        <div className={"list"}>
+      <div className="cardContainer">
+        <div className="list">
           {logements.map(({ id, title, cover }) => (
             <Card key={id} id={id} cover={cover} title={title} />
           ))}

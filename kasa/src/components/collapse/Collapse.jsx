@@ -10,7 +10,7 @@ function Collapse({ title, content, children, collapseContent }) {
 
   return (
     <div className="containerCollapse">
-      <div className={"header"} onClick={toggleOpen}>
+      <div className="header" onClick={toggleOpen}>
         <h2>{title}</h2>
         <img
           src={isOpen ? VectorUp : VectorDown}

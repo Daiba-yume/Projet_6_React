@@ -8,7 +8,7 @@ function AboutPage() {
   return (
     <main>
       <Banner page="about" imageUrl={BannerAbout} message="" />
-      <div className={"collapseContainer"}>
+      <div className="collapseContainer">
         <Collapse title="Fiabilité">
           <p>
             Les annonces postées sur Kasa garantissent une fiabilité totale. Les
