@@ -18,7 +18,7 @@
     "rating": "5",
     "location": "Ile de France - Paris 17e",
     "equipments": [
-      "equipements de base",
+      "Équipements de base",
       "Micro-Ondes",
       "Douche italienne",
       "Frigo",
@@ -360,7 +360,7 @@
       "WIFI",
       "Télévision",
       "Cintrés",
-      "equipements de base"
+      "Équipements de base"
     ],
     "tags": ["Forêt", "Nature", "Grande maison"]
   },
@@ -407,7 +407,7 @@
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-15-4.jpg",
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-15-5.jpg"
     ],
-    "description": "Si vous êtes à la recherche de l'endroit idéal pour poser vos valises entre deux rdvs d'affaire, ne cherchez plus. Notre loft est l'endroit idéal. En plein coeur de la Défense, il dispose également de tous les equipements pour que vous soyez comme chez vous.",
+    "description": "Si vous êtes à la recherche de l'endroit idéal pour poser vos valises entre deux rdvs d'affaire, ne cherchez plus. Notre loft est l'endroit idéal. En plein coeur de la Défense, il dispose également de tous les équipements pour que vous soyez comme chez vous.",
     "host": {
       "name": "Julie Donatella",
       "picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-10.jpg"

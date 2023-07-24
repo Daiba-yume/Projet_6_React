@@ -21,6 +21,31 @@
   img {
     margin-right: 20px;
   }
+  img {
+    -webkit-transition: transform 1s ease;
+    transition: transform 1s ease;
+  }
+
+  .rotate180 {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  img:active {
+    -webkit-animation: rotateAnimation 1s;
+    animation: rotateAnimation 1s;
+  }
+
+  @keyframes rotateAnimation {
+    from {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+  }
 
   .collapseContent {
     padding: 10px;
