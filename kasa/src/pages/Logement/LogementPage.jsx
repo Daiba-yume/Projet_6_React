@@ -1,16 +1,16 @@
 import { useParams } from "react-router-dom";
-import LogementPage from "./LogementPage";
+import Logement from "../Logement/Logement";
 import logementsData from "../../datas/logements.json";
 
-function LogementPageRoute() {
+function LogementPage() {
   const { id } = useParams();
   const logement = logementsData.find((logement) => logement.id === id);
 
   return (
     <div>
-      <LogementPage logement={logement} />
+      <Logement logement={logement} />
     </div>
   );
 }
 
-export default LogementPageRoute;
+export default LogementPage;
