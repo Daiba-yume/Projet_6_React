@@ -1,32 +1,37 @@
 import { useState } from "react";
-import leftVector from "../assets/VectorLeft.svg";
-import rightVector from "../assets/VectorRight.svg";
+import VectorLeft from "../../assets/VectorLeft.svg";
+import VectorRight from "../../assets/VectorRight.svg";
+import "../../styles/Gallery.scss";
 
 function Gallery({ pictures }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleLeftClick = () => {
-    if (currentIndex === 0) {
+    if (pictures && currentIndex === 0) {
       setCurrentIndex(pictures.length - 1);
-    } else {
+    } else if (pictures) {
       setCurrentIndex(currentIndex - 1);
     }
   };
 
   const handleRightClick = () => {
-    if (currentIndex === pictures.length - 1) {
+    if (pictures && currentIndex === pictures.length - 1) {
       setCurrentIndex(0);
-    } else {
+    } else if (pictures) {
       setCurrentIndex(currentIndex + 1);
     }
   };
+
+  if (!pictures || pictures.length === 0) {
+    return null; // Si les images sont absentes ou vides, ne rien afficher
+  }
 
   return (
     <div className="gallery">
       {pictures.length > 1 && (
         <img
-          className="leftVector"
-          src={leftVector}
+          className="VectorLeft"
+          src={VectorLeft}
           alt="Précédent"
           onClick={handleLeftClick}
         />
@@ -38,8 +43,8 @@ function Gallery({ pictures }) {
       />
       {pictures.length > 1 && (
         <img
-          className="rightVector"
-          src={rightVector}
+          className="VectorRight"
+          src={VectorRight}
           alt="Suivant"
           onClick={handleRightClick}
         />
