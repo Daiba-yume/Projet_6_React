@@ -9,10 +9,11 @@ function Collapse({ title, content, children, collapseContent }) {
   const toggleOpen = () => setIsOpen(!isOpen);
 
   return (
-    <div className="containerCollapse">
+    <div className={`containerCollapse ${isOpen ? "open" : ""}`}>
       <div className="header" onClick={toggleOpen}>
         <h2>{title}</h2>
         <img
+          className={`arrow ${isOpen ? "rotate" : ""}`}
           src={isOpen ? VectorUp : VectorDown}
           alt={isOpen ? "fermer" : "Ouvrir"}
         />

@@ -4,10 +4,12 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 110px;
+
   img {
     height: 50%;
     display: flex;
   }
+
   nav {
     display: flex;
     gap: 30px;
@@ -19,13 +21,16 @@ header {
       font-weight: 400;
       font-size: 1.2em;
       text-decoration: none;
+
       @media only screen and (max-width: 768px) {
         text-transform: uppercase;
       }
-    }
-    .navlink:active,
-    .navlink:hover {
-      text-decoration: underline;
+
+      &:active,
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
     }
   }
 }
