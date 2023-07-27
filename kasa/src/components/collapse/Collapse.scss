@@ -21,7 +21,7 @@
   }
   .arrow {
     margin-right: 20px;
-    transition: transform 300ms ease;
+    transition: transform 300ms ease-in;
   }
   .rotate {
     transform: rotate(360deg);

@@ -6,19 +6,40 @@
   @media only screen and (max-width: 768px) {
     width: 100%;
   }
+
   .image {
     border-radius: 0.5rem;
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
+
   .titre {
     position: absolute;
     bottom: 10px;
+    left: 0;
     color: white;
     font-size: 14px;
     font-family: "Montserrat";
     font-weight: 500;
     padding: 0 20px;
+    z-index: 1; /* Assurez-vous que le titre apparaît par-dessus la superposition */
+  }
+
+  /* Ajoutez la superposition avec une couleur de fond semi-transparente */
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.7) 13%,
+      rgba(0, 212, 255, 0) 70%
+    ); /* Couleur de fond semi-transparente */
+    z-index: 0; /* Assurez-vous que la superposition est en dessous du titre */
   }
 }
