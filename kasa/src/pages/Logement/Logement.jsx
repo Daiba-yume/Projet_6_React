@@ -10,7 +10,7 @@ function Logement({ logement }) {
 
   useEffect(() => {
     if (!logement) {
-      navigate("/not-found");
+      navigate("/PageNotFound");
     }
   }, [logement, navigate]);
 
@@ -42,27 +42,8 @@ function Logement({ logement }) {
           <Rating rating={logement.rating} className="rating" />
         </div>
         <div className="collapseContainer">
-          <Collapse
-            title="Description"
-            className="collapseDescription"
-            contentClassName="collapseContent"
-          >
-            <p className="collapseP">{logement.description}</p>
-          </Collapse>
-          <Collapse
-            title="Equipements"
-            className="collapseEquipments"
-            contentClassName="collapseContent"
-          >
-            <ul className="collapseUl">
-              {logement.equipments &&
-                logement.equipments.map((equipments, index) => (
-                  <li key={index} className="equipments">
-                    {equipments}
-                  </li>
-                ))}
-            </ul>
-          </Collapse>
+          <Collapse title="Description" content={logement.description} />
+          <Collapse title="Equipements" content={logement.equipments} />
         </div>
       </div>
     </div>
