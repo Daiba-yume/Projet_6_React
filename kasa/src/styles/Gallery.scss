@@ -3,6 +3,9 @@
   width: 100%;
   margin-top: 30px;
   height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Aligner le contenu en bas */
 }
 
 .currentPicture {
@@ -59,4 +62,10 @@
   .VectorRight {
     right: 10px;
   }
+}
+.counter {
+  position: absolute;
+  bottom: 15px; /* Espacement depuis le bas */
+  left: 50%; /* Au centre horizontal */
+  color: white;
 }

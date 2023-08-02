@@ -23,7 +23,7 @@ function Gallery({ pictures }) {
   };
 
   if (!pictures || pictures.length === 0) {
-    return null; // Si les images sont absentes ou vides, ne rien afficher
+    return null;
   }
 
   return (
@@ -49,6 +49,11 @@ function Gallery({ pictures }) {
           onClick={handleRightClick}
         />
       )}
+
+      {/* Ajout du compteur */}
+      <div className="counter">
+        {currentIndex + 1} / {pictures.length}
+      </div>
     </div>
   );
 }
