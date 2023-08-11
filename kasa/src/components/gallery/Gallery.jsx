@@ -1,34 +1,35 @@
 import { useState } from "react";
 import VectorLeft from "../../assets/VectorLeft.svg";
 import VectorRight from "../../assets/VectorRight.svg";
-import "../../styles/Gallery.scss";
+import "./Gallery.scss";
 
 function Gallery({ pictures }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleLeftClick = () => {
-    if (pictures && currentIndex === 0) {
-      setCurrentIndex(pictures.length - 1);
-    } else if (pictures) {
-      setCurrentIndex(currentIndex - 1);
-    }
+    setCurrentIndex((currentIndex - 1 + pictures.length) % pictures.length);
   };
 
   const handleRightClick = () => {
-    if (pictures && currentIndex === pictures.length - 1) {
-      setCurrentIndex(0);
-    } else if (pictures) {
-      setCurrentIndex(currentIndex + 1);
-    }
+    setCurrentIndex((currentIndex + 1) % pictures.length);
   };
 
   if (!pictures || pictures.length === 0) {
     return null;
   }
 
+  const showCounter = pictures.length > 1;
+  const isFirstImage = currentIndex === 0;
+  const isLastImage = currentIndex === pictures.length - 1;
+
   return (
     <div className="gallery">
-      {pictures.length > 1 && (
+      {showCounter && (
+        <div className="counter">
+          {currentIndex + 1} / {pictures.length}
+        </div>
+      )}
+      {!isFirstImage && (
         <img
           className="VectorLeft"
           src={VectorLeft}
@@ -41,7 +42,7 @@ function Gallery({ pictures }) {
         src={pictures[currentIndex]}
         alt={`Logement ${currentIndex + 1}`}
       />
-      {pictures.length > 1 && (
+      {!isLastImage && (
         <img
           className="VectorRight"
           src={VectorRight}
@@ -49,11 +50,6 @@ function Gallery({ pictures }) {
           onClick={handleRightClick}
         />
       )}
-
-      {/* Ajout du compteur */}
-      <div className="counter">
-        {currentIndex + 1} / {pictures.length}
-      </div>
     </div>
   );
 }

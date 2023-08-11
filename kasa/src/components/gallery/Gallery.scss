@@ -5,7 +5,7 @@
   height: 550px;
   display: flex;
   justify-content: center;
-  align-items: flex-end; /* Aligner le contenu en bas */
+  align-items: flex-end;
 }
 
 .currentPicture {
@@ -65,7 +65,7 @@
 }
 .counter {
   position: absolute;
-  bottom: 15px; /* Espacement depuis le bas */
-  left: 50%; /* Au centre horizontal */
+  bottom: 15px;
+  left: 50%;
   color: white;
 }

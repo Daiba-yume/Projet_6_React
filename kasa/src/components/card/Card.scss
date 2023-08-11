@@ -23,10 +23,9 @@
     font-family: "Montserrat";
     font-weight: 500;
     padding: 0 20px;
-    z-index: 1; /* Assurez-vous que le titre apparaît par-dessus la superposition */
+    z-index: 1;
   }
 
-  /* Ajoutez la superposition avec une couleur de fond semi-transparente */
   &::after {
     content: "";
     position: absolute;
@@ -39,7 +38,7 @@
       0deg,
       rgba(0, 0, 0, 0.7) 13%,
       rgba(0, 212, 255, 0) 70%
-    ); /* Couleur de fond semi-transparente */
-    z-index: 0; /* Assurez-vous que la superposition est en dessous du titre */
+    );
+    z-index: 0;
   }
 }
