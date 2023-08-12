@@ -3,7 +3,7 @@
 ## Description
 
 Le site de Kasa a été codé il y a maintenant plus de 10 ans en ASP.NET avec un code legacy.
-Refonte totale pour passer à une stack complète en JavaScript avec NodeJS côté back-end, et React côté front-end. 
+Refonte totale pour passer à une stack complète en JavaScript avec NodeJS côté back-end, et React côté front-end en utilisant ses composants qui seront réutilisables, en suivant les maquettes Figma fournies. 
 L'application doit-être réactive et s'adapter de manière fluide à différents appareils.
 
 ## Contraintes fonctionnelles
