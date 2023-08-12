@@ -1,6 +1,5 @@
 import { useState } from "react";
 import VectorDown from "../../assets/VectorDown.svg";
-//import VectorUp from "../../assets/VectorUp.svg";
 import "./Collapse.scss";
 
 function Collapse({ title, content }) {
