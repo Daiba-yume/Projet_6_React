@@ -66,6 +66,30 @@
     margin-top: 20px;
   }
 
+  /*Collapse*/
+  .collapseContainer {
+    padding: 0px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 6%;
+  }
+
+  .containerCollapse {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+  }
+  .containerCollapse header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #ff6060;
+  }
+
   @media screen and (max-width: 768px) {
     .logementContainer {
       position: static;
@@ -109,12 +133,18 @@
     }
 
     .collapseContainer {
+      display: flex;
       flex-direction: column;
+      width: 100%;
+      cursor: pointer;
+      border-radius: 10px;
     }
 
+    .containerCollapse {
+      width: 100%;
+    }
     .collapseDescription,
     .collapseEquipments {
-      width: 100%;
       margin-bottom: 30px;
     }
 

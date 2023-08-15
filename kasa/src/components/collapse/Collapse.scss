@@ -1,8 +1,6 @@
 .containerCollapse {
   font-family: "Montserrat";
   margin-bottom: 30px;
-  background-color: #f6f6f6;
-  border-radius: 15px;
 
   .header {
     display: flex;
@@ -42,6 +40,8 @@
   .description {
     color: #ff6060;
     padding: 10px;
+    border-radius: 15px;
+    background-color: #f6f6f6;
     ul {
       display: block;
       list-style-type: disc;

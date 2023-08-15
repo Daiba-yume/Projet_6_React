@@ -17,7 +17,7 @@ function App() {
             <Route path="/About" element={<AboutPage />} />
             <Route path="/" element={<HomePage />} />
             <Route path="/Logement/:id" element={<LogementPage />} />
-            <Route path="/PageNotFound" element={<PageNotFound />} />
+            <Route path="*" element={<PageNotFound />} />
           </Routes>
         </BrowserRouter>
       </div>
